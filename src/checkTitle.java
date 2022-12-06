@@ -32,7 +32,7 @@ public class checkTitle {
     @Test(dataProvider = "browserProvider")
     public void test(String browser) throws InterruptedException {
         this.setUp(browser);
-        driver.get("https://www.google.com");
+        driver.get("bing.com");
         Thread.sleep(1000);
         WebElement btnAccept = driver.findElement(By.xpath(".//*[@id='L2AGLb']"));
         btnAccept.click();
